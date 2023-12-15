@@ -1,0 +1,44 @@
+:root{
+    /* BACKGROUND */
+    --color-background-page: rgba(255, 255, 255, 1);
+    --color-background-hovered: rgba(28, 28, 28, 0.05);
+    --color-background-surface: rgb(240, 242, 245);
+    --color-background-surface-hovered: rgb(225, 227, 230);
+
+    --color-background-surface-metric-1: rgba(227, 245, 255, 1);
+    --color-background-surface-metric-2:rgba(229, 236, 246, 1);
+
+
+    /* BORDERS */
+    --color-border-primary: rgba(28, 28, 28, 0.1);
+
+    /* TEXTS */
+    --color-text-primary:rgba(28, 28, 28, 1);
+    --color-text-secondary: rgba(28, 28, 28, 0.5);
+
+    /* ICON */
+    --color-icon-primary: rgba(28, 28, 28, 1);
+    --color-icon-secondary: rgba(28, 28, 28, 0.2);
+    
+    
+
+
+    
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+/* Typography */
+.title-1{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 78px;
+}
+.title-2{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+}

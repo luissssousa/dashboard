@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="designtokens.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    
+</head>
+<body>
+    <nav class="sidemenu" aria-expanded="true">
+        <div class="userSection">
+            <a href="" class="sidemenu-item" aria-label="Acesse seu perfil de usuário">
+                <img class="avatar" src="/assets/imgs/user-picture.png" alt="foto de perfil">
+                <p>User Name</p>
+            </a> 
+        </div>
+        <div class="sidemenu-section">
+            <p class="subsection-text">Dashboards</p>
+            <ul>
+                <li>
+                    <a href="" class="sidemenu-item" aria-labelledby="a11Y-mi-overview mi-overview" >
+                        <span class="material-symbols-outlined">data_usage</span>
+                        <p id="mi-overview">Overview</p>
+                        <span class="a11Y-text" id="a11Y-mi-overview">Ir para</span>
+                    </a>
+                </li>
+                <li >
+                    <button class="sidemenu-item" aria-labelledby="a11Y-mi-ecom mi-ecom" aria-expanded="false">
+                        <span class="material-symbols-outlined">local_mall</span>
+                        <p id="mi-ecom">eCommerce</p>
+                        <span class="material-symbols-outlined expand-icon" hidden>expand_more</span>
+                        <span class="a11Y-text" id="a11Y-mi-ecom">Expandir</span>
+                    </button>
+                </li>
+                <li >
+                    <button class="sidemenu-item" aria-labelledby="a11Y-mi-projects mi-projects" aria-expanded="false" >
+                        <span class="material-symbols-outlined">folder</span>
+                        <p id="mi-projects">Projects</p>
+                        <span class="material-symbols-outlined expand-icon">expand_more</span>
+                        <span class="a11Y-text" id="a11Y-mi-projects">Expandir</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="sidemenu-item" aria-labelledby="a11Y-mi-courses mi-courses" aria-expanded="false">
+                        <span class="material-symbols-outlined">school</span>
+                        <p id="mi-courses">Online Courses</p>
+                        <span class="material-symbols-outlined expand-icon">expand_more</span>
+                        <span class="a11Y-text" id="a11Y-mi-courses">Expandir</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="sidemenu-section">
+            <p class="subsection-text">Pages</p>
+            <ul>
+                <li>
+                    <button id="23" onclick="closeMI()" class="sidemenu-item" aria-labelledby="a11Y-mi-userprof mi-userprof" aria-expanded="false">
+                        <span class="material-symbols-outlined">badge</span>
+                        <p id="mi-userprof">User Profile</p>
+                        <span class="material-symbols-outlined expand-icon expand-icon">expand_more</span>
+                        <span class="a11Y-text" id="a11Y-mi-userprof">Expandir</span>
+                    </button>
+                    <div class="menu-expanded" id="mexpand" hidden>
+                        <ul>
+                            <li class="sidemenu-item" >
+                                <a href="" aria-label="Ir para Overview">Overview</a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a href="" aria-label="Ir para Projetos">Projects</a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a href=""aria-label="Ir para Campanhas">Campaigns</a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a href="" aria-label="Ir para Documents">Documents</a>
+                            </li>
+                            <li class="sidemenu-item" >
+                                <a href="" aria-label="Ir para Seguidores">Followers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="sidemenu-item" aria-labelledby="a11Y-mi-account mi-account" aria-expanded="false">
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <p id="mi-account">Account</p>
+                        <span class="material-symbols-outlined expand-icon expand-icon">expand_more</span>
+                        <span class="a11Y-text" id="a11Y-mi-account">Expandir</span>
+                    </button>
+                </li>
+                <li >
+                    <button class="sidemenu-item" aria-labelledby="a11Y-mi-corp mi-corp" aria-expanded="false">
+                        <span class="material-symbols-outlined">group</span>
+                        <p id="mi-corp">Corporate</p>
+                        <span class="material-symbols-outlined expand-icon">expand_more</span>
+                        <span class="a11Y-text" id="a11Y-mi-corp">Expandir</span>
+                    </button>
+                </li>
+                <li >
+                    <button class="sidemenu-item" aria-labelledby="a11Y-mi-blog mi-blog" aria-expanded="false">
+                        <span class="material-symbols-outlined">sticky_note_2</span>
+                        <p id="mi-blog">Blog</p>
+                        <span class="material-symbols-outlined expand-icon">expand_more</span>
+                        <span class="a11Y-text" id="a11Y-mi-blog">Expandir</span>
+                    </button>
+                </li>
+                <li >
+                    <button class="sidemenu-item" aria-labelledby="a11Y-mi-social mi-social" aria-expanded="false">
+                        <span class="material-symbols-outlined">forum</span>
+                        <p id="mi-social">Social</p>
+                        <span class="material-symbols-outlined expand-icon">expand_more</span>
+                        <span class="a11Y-text" id="a11Y-mi-social">Expandir</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        
+    
+    </nav>
+    <main>
+        <div class="top-bar">
+            <div class="tb-rightcontent">
+                <button id="closeMenu" class="btn-icons" onclick=" closeM()">
+                    <span class="material-symbols-outlined">
+                        thumbnail_bar
+                    </span>
+                </button>
+                <button class="btn-icons">
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
+                </button>
+                <div class="breadcrumbs">
+                    <p class="breadcrumbs-link">Dashboards</p>
+                    <span>/</span>
+                    <p class="breadcrumbs-current">Overview</p>
+                </div>
+            </div>
+            <div class="tb-leftcontent">
+                <!-- <label for="search">Buscar</label> -->
+                <input placeholder="Buscar" type="search" name="search" id="search" class="input">
+
+                <button class="btn-icons">
+                    <span class="material-symbols-outlined">
+                        dark_mode
+                    </span>
+                </button>
+                <button class="btn-icons">
+                    <span class="material-symbols-outlined">
+                        refresh
+                    </span>
+                </button>
+                <button id="btnNotif" onclick="closeNoti()" class="btn-icons">
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                </button>
+                
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="main-head">
+                <h1>Overview</h1>
+                <label for="period" style="display: none;">Data selector</label>
+                <select name="Period" id="period">
+                    <option value="Today">Today</option>
+                    <option value="L7">Last 7 days</option>
+                    <option value="L20">Last 20 days</option>
+                    <option value="range">Range</option>
+                </select>
+            </div>
+            <div class="card a">
+                <h2>Views</h2>
+                <div class="metric-number">
+                    <p class="card-number">7,265</p>
+                    <div class="metric">
+                        <p>+11.02%</p>
+                        <span class="material-symbols-outlined">
+                            trending_up
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card b">
+                <h2>Visits</h2>
+                <div class="metric-number">
+                    <p class="card-number">3,671</p>
+                    <div class="metric">
+                        <p>-0.03%</p>
+                        <span class="material-symbols-outlined">
+                            trending_down
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card c">
+                <h2>New Users</h2>
+                <div class="metric-number">
+                    <p class="card-number">156</p>
+                    <div class="metric">
+                        <p>+15.03%</p>
+                        <span class="material-symbols-outlined">
+                            trending_up
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card d">
+                <h2>Active Users</h2>
+                <div class="metric-number">
+                    <p class="card-number">2,318</p>
+                    <div class="metric">
+                        <p>+6.08%</p>
+                        <span class="material-symbols-outlined">
+                            trending_up
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card e">
+                <h2>Active Users</h2>
+                <!-- <img src="/assets/imgs/Chart-e.png" alt="chart" height="244px"> -->
+                <canvas class="chart-e" id="myChart" height="250%"></canvas> 
+                
+            </div>
+            <div class="card f">
+                <h2>Traffic by Website</h2>
+                <div class="p-container">
+                    <div class="progress-c">
+                        <p>Google</p>
+                        <progress id="file" value="32" max="100"> 32% </progress>
+                    </div>
+                    <div class="progress-c">
+                        <p>Youtube</p>
+                        <progress id="file" value="48" max="100"> 32% </progress>
+                    </div>
+                    <div class="progress-c">
+                        <p>Instagram</p>
+                        <progress id="file" value="56" max="100"> 56% </progress>
+                    </div>
+                    <div class="progress-c">
+                        <p>Pinterest</p>
+                        <progress id="file" value="23" max="100"> 32% </progress>
+                    </div>
+                    <div class="progress-c">
+                        <p>Facebook</p>
+                        <progress id="file" value="12" max="100"> 32% </progress>
+                    </div>
+                    <div class="progress-c">
+                        <p>Twitter</p>
+                        <progress id="file" value="89" max="100"> 32% </progress>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card g">
+                <h2>Traffic by Device</h2>
+                <canvas class="chart-g" id="myChart" height="250%"></canvas> 
+            </div>
+            <div class="card h">
+                <h2>Traffic by Location</h2>
+                <canvas class="chart-h" id="myChart" height="250%"></canvas> 
+            </div>
+            <div class="card i">
+                <h2>Marketing & SEO</h2>
+                <canvas class="chart-i" id="myChart" height="250%"></canvas> 
+            </div>
+        </div>
+    </main>
+    <aside id="notif-aside">
+        <button id="cloNotf" onclick="cnot()" class="btn-icons">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </button>
+        
+    </aside>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+    <script src="charts.js"></script>
+</body>
+</html>
