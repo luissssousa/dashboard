@@ -6,11 +6,11 @@ let menuItems = document.querySelectorAll("button.sidemenu-item > p");
 let menuItemsA = document.querySelectorAll("a.sidemenu-item > p");
 let expandIcon = document.querySelectorAll(".expand-icon");
 let subSection = document.querySelectorAll(".subsection-text");
+let largura = window.innerWidth
+  || document.documentElement.clientWidth
+  || document.body.clientWidth;
 
 function closeM(){
-
- 
-
   if (menu.getAttribute('aria-expanded') === "true") {
     menu.setAttribute('aria-expanded', "false");
     menu.style.width = "64px";
@@ -30,7 +30,6 @@ function closeM(){
       item.innerHTML = "---";
       item.style.textAlign = "center"
     });
-
   } else {
     // menu.style.width = "256px";
     menu.setAttribute('aria-expanded', "true");
@@ -54,6 +53,9 @@ function closeM(){
   }
 }
 
+
+
+
 function closeMI(){
   let menuItem = document.getElementById("23");
   let mExpand = document.getElementById("mexpand");
@@ -70,24 +72,11 @@ function closeMI(){
 
 let notAside = document.getElementById('notif-aside');
 let btnNotif = document.getElementById('btnNotif');
+
 function closeNoti(){
-  
-  
-
-  // if(notAside.style.display === 'flex' || notAside.style.display === '' ){
-  //   notAside.style.display = 'none';
-  //   notAside.style.transition = 'display 2s ease-in'
-  // } else if(notAside.style.display === 'none'){
-  //   notAside.style.display = 'flex';
-  //   notAside.style.transition = 'display 2s ease-in'
-
-  // }
   if (notAside.style.display = 'none' || notAside.style.display === ''){
     notAside.style.right = "0"
     notAside.style.display = 'flex'
-
-  } else{
-   
   }
 }
 function cnot(){
@@ -95,7 +84,28 @@ function cnot(){
   if (notAside.style.display = 'flex'){
     notAside.style.right = "-280px"
     notAside.style.display = 'none'
-  } else{
-    
   }
 }
+
+
+// Switch Theme Using Class
+var changeTheme = document.getElementById('ctheme');
+var icontheme = document.getElementById('iconCtheme');
+const $body = document.querySelector('body');
+
+changeTheme.addEventListener('click', switchTheme)
+
+function switchTheme(){
+  document.body.classList.toggle('dark-theme');
+
+  if($body.classList.contains('dark-theme')){
+    icontheme.textContent = "light_mode"
+  } else{
+    icontheme.textContent = "dark_mode"
+  }
+}
+
+// Switch Theme change files
+// function switchTheme(){
+
+// }

@@ -21,9 +21,38 @@
     --color-icon-secondary: rgba(28, 28, 28, 0.2);
     
     
+    --border-radius-xsmall: 8px;
+    --border-radius-small: 12px;
+    --border-radius-default: 16px;
+    --border-radius-rounded: 50%;
 
-
+    --boxshadow-menus: -16px 0px 24px 0px rgba(0, 0, 0, 0.08);
     
+}
+.dark-theme{
+    /* BACKGROUND */
+    --color-background-page: rgba(28, 28, 28, 1);
+    --color-background-hovered: rgba(255, 255, 255, 0.1);
+    --color-background-surface: rgba(255, 255, 255, 0.05);
+    --color-background-surface-hovered: rgba(255, 255, 255, 0.1);
+
+    --color-background-surface-metric-1: rgba(8, 57, 84, 1);
+    --color-background-surface-metric-2:rgba(11, 52, 112, 1);
+
+
+    /* BORDERS */
+    --color-border-primary:rgba(255, 255, 255, 0.1);
+
+    /* TEXTS */
+    --color-text-primary:rgba(255, 255, 255, 1);
+    --color-text-secondary: rgba(255, 255, 255, 0.4);
+
+    /* ICON */
+    --color-icon-primary: rgba(255, 255, 255, 1);
+    --color-icon-secondary: rgba(255, 255, 255, 0.2);
+
+    --boxshadow-menus: -16px 0px 24px 0px rgba(0, 0, 0, 0.40);;
+
 }
 body{
     font-family: 'Inter', sans-serif;
